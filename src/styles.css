@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: white;
+}
+
+input[type="text"] {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  background-color: #454545;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: #333;
+    border: 1px solid #454545;
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: stretch;
+  justify-items: stretch;
+  height: 100vh;
+}
+
+.header {
+  margin: 1rem;
+}
+
+.board {
+  background-image: url('./img/gridcell.png');
+}
+
+.label-field {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.label {
+  user-select: none;
+}
